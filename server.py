@@ -27,7 +27,7 @@ try:
                 except socket.error, ex:
                     if ex.errno != errno.EMFILE:
                         raise
-                    logging.error('Too many open files')
+                    logging.error(ex.strerror)
             elif event & select.EPOLLIN:
                 packet = connections[fileno].recv(1024)
                 if len(packet) == 0:
