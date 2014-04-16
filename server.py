@@ -33,7 +33,7 @@ try:
                     connection.close()
                     logging.error(ex.strerror)
                     idle_fd = open('/dev/null')
-                    logging.error('Too many open files')
+                    logging.error(ex.strerror)
             elif event & select.EPOLLIN:
                 packet = connections[fileno].recv(1024)
                 if len(packet) == 0:
