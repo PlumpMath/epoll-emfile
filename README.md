@@ -1,7 +1,7 @@
 用 epoll 写个提供 echo 服务的 tcp server 
 
-- [test](http://nanny.netease.com/yangjunwei/epoll-emfile/tree/test) 分支用来验证在 `Too many open files` 的情况下CPU占用会飙升。
-- [master](http://nanny.netease.com/yangjunwei/epoll-emfile/tree/master) 分支解决这个问题。
+- [test](https://github.com/yangjuven/epoll-emfile/tree/test) 分支用来验证在 `Too many open files` 的情况下CPU占用会飙升。
+- [master](https://github.com/yangjuven/epoll-emfile/tree/master) 分支解决这个问题。
 
 具体文件
 
